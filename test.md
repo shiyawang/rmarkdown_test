@@ -48,6 +48,6 @@ g <- ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
 print(g)
 ```
 
-![](test_files/figure-markdown_github/unnamed-chunk-2-1.png)<!--- --->
+![](test_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
 Wow! That's a lot of money!
