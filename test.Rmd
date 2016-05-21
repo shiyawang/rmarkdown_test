@@ -27,10 +27,8 @@ graph_data <- diamonds %>%
 
 graph_data
 
-g <- ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
+ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
   geom_bar(stat = "identity")
-
-print(g)
 ```
 
-Wow! That's a lot of money!
+Wow! That's a lot of money! Better start saving.
