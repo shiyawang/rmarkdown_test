@@ -45,7 +45,8 @@ graph_data
 g <- ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
   geom_bar(stat = "identity")
 
-print(g)
+# print(g)
+g
 ```
 
 ![](test_files/figure-markdown_github/unnamed-chunk-2-1.png)<!-- -->
