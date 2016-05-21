@@ -21,7 +21,7 @@ head(diamonds)
     ## 5  0.31      Good      J     SI2  63.3    58   335  4.34  4.35  2.75
     ## 6  0.24 Very Good      J    VVS2  62.8    57   336  3.94  3.96  2.48
 
-Now we wan to see just how much money we can waste. We'll look at the average price according to the cut.
+Now we want to see just how much money we can waste. We'll look at the average price according to the cut.
 
 ``` r
 graph_data <- diamonds %>%
@@ -45,7 +45,6 @@ graph_data
 g <- ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
   geom_bar(stat = "identity")
 
-# print(g)
 g
 ```
 

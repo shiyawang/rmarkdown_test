@@ -17,7 +17,7 @@ library(ggplot2)
 head(diamonds)
 ```
 
-Now we wan to see just how much money we can waste. We'll look at the average
+Now we want to see just how much money we can waste. We'll look at the average
 price according to the cut.
 
 ```{r}
@@ -30,7 +30,6 @@ graph_data
 g <- ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
   geom_bar(stat = "identity")
 
-# print(g)
 g
 ```
 
