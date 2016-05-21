@@ -1,6 +1,8 @@
 ---
 title: "I love Shiya"
-output: html_document
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 # I love Shiya: The Analytical Romance
