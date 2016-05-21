@@ -30,7 +30,7 @@ graph_data
 g <- ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
   geom_bar(stat = "identity")
 
-g
+print(g)
 ```
 
 Wow! That's a lot of money!

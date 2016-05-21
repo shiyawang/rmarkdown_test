@@ -11,7 +11,7 @@ head(diamonds)
 ```
 
     ## Source: local data frame [6 x 10]
-    ## 
+    ##
     ##   carat       cut  color clarity depth table price     x     y     z
     ##   (dbl)    (fctr) (fctr)  (fctr) (dbl) (dbl) (int) (dbl) (dbl) (dbl)
     ## 1  0.23     Ideal      E     SI2  61.5    55   326  3.95  3.98  2.43
@@ -32,7 +32,7 @@ graph_data
 ```
 
     ## Source: local data frame [5 x 2]
-    ## 
+    ##
     ##         cut ave_price
     ##      (fctr)     (dbl)
     ## 1      Fair  4358.758
@@ -45,9 +45,9 @@ graph_data
 g <- ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
   geom_bar(stat = "identity")
 
-g
+print(g)
 ```
 
-![](test_files/figure-markdown_github/unnamed-chunk-2-1.png)<!-- -->
+![](test_files/figure-markdown_github/unnamed-chunk-2-1.png)<!--- --->
 
 Wow! That's a lot of money!
