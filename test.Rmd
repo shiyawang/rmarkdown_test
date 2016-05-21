@@ -1,0 +1,34 @@
+---
+title: "I love Shiya"
+output: html_document
+---
+
+# I love Shiya: The Analytical Romance
+
+Let's look at the types of diamonds I can waste money on. First, we'll load the
+data.
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+head(diamonds)
+```
+
+Now we wan to see just how much money we can waste. We'll look at the average
+price according to the cut.
+
+```{r}
+graph_data <- diamonds %>%
+  group_by(cut) %>%
+  summarize(ave_price = mean(price))
+
+graph_data
+
+g <- ggplot(data = graph_data, aes(x = cut, y = ave_price)) +
+  geom_bar(stat = "identity")
+
+print(g)
+```
+
+Wow! That's a lot of money!
